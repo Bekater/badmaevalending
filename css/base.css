@@ -1,5 +1,19 @@
+* {
+  box-sizing: border-box; /*Включить заполнение и границу в общую ширину и высоту элемента*/
+}
+
 .container {
   font-family: 'Open sans';
   width: 1250px;
   margin: 0 auto;
+}
+
+.line {
+  height: 3px;
+  width: 134px;
+  background-color: #FF2D2D;
+}
+
+.line_center {
+  margin: 0 auto 86px auto;
 }

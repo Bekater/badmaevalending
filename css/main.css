@@ -1,6 +1,7 @@
 .main {
     background-color: #F6F2F2;
     padding: 30px 0 110px 0;
+    margin-bottom: 110px;
 }
 
 .header {
@@ -8,14 +9,14 @@
     
 }
 
-.navigation-list {/*home portfolio about contact*/
+.navigation__list {/*home portfolio about contact*/
     font-family: 'Open Sans Bold';
     height: 90px;
     display: flex;
     justify-content: center;
 }
 
-/* .navigation-list-item {
+/* .navigation__list-item {
     display: flex;
     align-items: center; пункты меню отцентровали по вертикали хэдера
 } */
@@ -40,7 +41,7 @@
 .inner-left {
     padding-right: 120px;
 }
-.inner-title {
+.inner__title {
     font-family: 'Open Sans Bold';
     letter-spacing: 1.5px; /*межбуквенниые интервалы*/
     text-transform: uppercase; /*все заглавные*/
@@ -70,6 +71,6 @@
 }
 
 iframe {
-    box-shadow: -2.2px -13.8px 73px rgba(0, 0, 0, 0.29);
+    box-shadow: -2.2px -13.8px 73px rgba(0, 0, 0, 0.29); /*тень*/
 }
 
