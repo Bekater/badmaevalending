@@ -1,0 +1,55 @@
+.feature {
+  margin-bottom: 104px;
+}
+
+.feature__title {
+  font-size: 42px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.feature__description {
+  line-height: 28px;
+  text-align: center;
+  max-width: 536px;
+  margin: 0 auto 34px auto; /*отцентровали параграф*/
+}
+
+.feature__tabs {
+display: flex; /*расположили по горизонтали элементы*/
+justify-content: center; /*и отцентровали*/
+gap: 0 60px; /*отступ по горизонтали*/
+margin-bottom: 60px;
+}
+
+.feature__tabs-item {
+  font-size: 22px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.feature__tabs-item:hover {
+  color: #FF2D2D;
+}
+
+.feature__tabs-item_active {
+  color: #FF2D2D ;
+}
+
+.feature__products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /*отступы*/
+}
+
+.feature__product {
+  width: 24%;
+  height: 300px;
+  object-fit: cover; /*новое свойство заполняет по зазмеру картинки*/
+}
+
+.feature__product:hover {
+  cursor: pointer;
+  height: 310px;
+}
