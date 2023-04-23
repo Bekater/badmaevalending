@@ -20,8 +20,7 @@
   line-height: 28px;
   text-align: center;
   max-width: 536px;
-  margin: 0 auto 34px auto;
-  /*отцентровали параграф*/
+  margin: 0 auto 34px auto;   /*отцентровали параграф*/
 }
 
 .products__filter {
@@ -58,21 +57,21 @@
 
 .feature__products {
   display: flex;
+  align-items: сenter;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 16px;
-  /*отступы*/
 }
 
 .feature__product {
-  width: 24%;
-  height: 300px;
-  object-fit: cover;
-  /*новое свойство заполняет по зазмеру картинки*/
+  flex: 1 1 24%;
+  max-width: 298px;
+  height: 292px;
+  margin-bottom: 18px;
+  object-fit: cover;  /*новое свойство заполняет по зазмеру картинки*/
 }
 
 .feature__product:hover {
   cursor: pointer;
-  height: 310px;
 }
 
 @media screen and (max-width: 1286px) {

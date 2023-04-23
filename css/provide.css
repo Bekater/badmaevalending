@@ -38,6 +38,7 @@
   /*при наведении появляется рука*/
   letter-spacing: 0.3px;
   /*межбуквенный интервал*/
+  margin-bottom: 50px;
 }
 
 .provide__advatages {
