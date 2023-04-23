@@ -10,9 +10,7 @@
 }
 
 .team__heading {
-  font-size: 42px;
   margin-bottom: 24px;
-  text-transform: uppercase;
 }
 
 .team__text {
@@ -24,7 +22,7 @@
 
 .team__line {
   bottom: 1px solid #ff2d2d;
-  width: 134px;
+  max-width: 134px;
   max-height: 4px;
   margin-left: 0;
 }
@@ -39,7 +37,7 @@
 
 .team__selected-photo {
   flex-shrink: 0;
-  width: 322px;
+  max-width: 322px;
   height: 462px;
   margin-right: 67px;
   background-color: #FF2D2D;
@@ -60,6 +58,7 @@
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
   }
+
   .team__main-content {
     display: contents;
   }
@@ -101,7 +100,8 @@
 }
 
 .team__selected-link:hover {
-  text-decoration: underline;/*при наведении добавляется подчеркивание*/
+  text-decoration: underline;
+  /*при наведении добавляется подчеркивание*/
 }
 
 .members {
@@ -126,9 +126,11 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  visibility: hidden; /*изначально спрятано имя*/
+  visibility: hidden;
+  /*изначально спрятано имя*/
   color: #FFFFFF;
-  position: absolute; /* при наведении имя выходит снизу вверх*/
+  position: absolute;
+  /* при наведении имя выходит снизу вверх*/
   bottom: 0;
   width: 183px;
   height: 38px;
@@ -138,7 +140,8 @@
   opacity: 0.5;
 }
 
-.member:hover > .member__name {/*при наведении показать имя*/
+.member:hover>.member__name {
+  /*при наведении показать имя*/
   visibility: visible;
 }
 
@@ -147,4 +150,29 @@
   width: 184px;
   height: 276px;
   background-color: #000000;
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 855px) {
+  .team__members {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+
+  .team__selected-photo {
+    grid-row: 1 / 2;
+    margin-bottom: 18px;
+    margin-right: 0;
+  }
+
+  .team__selected-info {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .members {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
 }

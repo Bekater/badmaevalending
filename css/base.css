@@ -1,19 +1,38 @@
 * {
-  box-sizing: border-box; /*Включить заполнение и границу в общую ширину и высоту элемента*/
+  box-sizing: border-box;
+  /*Включить заполнение и границу в общую ширину и высоту элемента*/
 }
+
+.page {
+  font-family: 'Open sans';
+  margin: 1px;
+  display: flex;
+  flex-direction: column;
+}
+
 
 .container {
-  font-family: 'Open sans';
-  width: 1250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1250px;
   margin: 0 auto;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  
 }
 
-.line {
-  height: 3px;
+.header__line {
   width: 134px;
-  background-color: #FF2D2D;
+  border: 1px solid #FF2D2D;
 }
 
-.line_center {
-  margin: 0 auto 86px auto;
+.section-heading {
+  color: #000000;
+  margin: 0;
+  font-weight: 700;
+  line-height: 56px;
+  text-transform: uppercase;
+  font-size: 42px;
 }

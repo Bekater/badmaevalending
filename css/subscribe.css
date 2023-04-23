@@ -3,7 +3,7 @@
   display: block;
   width: 100%;
   min-width: 100%;
-  background-color:#2D2D2D;
+  background-color: #2D2D2D;
   padding-top: 124px;
   padding-bottom: 140px;
   margin-top: 140px;
@@ -17,11 +17,8 @@
 
 .subscribe__heading {
   color: #FFFFFF;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   line-height: 24px;
   letter-spacing: 1px;
-  font-size: 42px;
-  font-weight: 700;
 
 }
 
@@ -44,7 +41,7 @@
 }
 
 .subscribe__input {
-  color:#2C2C2C;
+  color: #2C2C2C;
   display: flex;
   align-items: center;
   flex: 0 1 526px;
@@ -74,6 +71,16 @@
   text-transform: uppercase;
   margin-left: 20px;
   margin-top: 56px;
+}
 
+.subscribe__button:hover {
+  /*при наведении цвет тусклеет*/
+  opacity: 0.5;
+  cursor: pointer;
+}
 
+@media screen and (max-width: 1286px) {
+  .subscribe__heading {
+    line-height: 50px;
+  }
 }

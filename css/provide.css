@@ -1,11 +1,14 @@
 .provide {
   display: flex;
-  padding-bottom: 100px; 
-  border-bottom: 3px solid #ECECEC;/*нарисовалась серая полоска внизу блока*/
+  padding-bottom: 100px;
+  border-bottom: 3px solid #ECECEC;
+  /*нарисовалась серая полоска внизу блока*/
   margin-bottom: 104px;
+  margin-top: 100px;
 }
 
-.provide__advatages, .provide__inner {
+.provide__advatages,
+.provide__inner {
   width: 50%;
 }
 
@@ -14,9 +17,8 @@
 }
 
 .provide__inner-title {
-  font-size: 42px;
-  line-height: 55px; /*межстрочный интервал*/
-  text-transform: uppercase;/*все заглавные*/
+  line-height: 55px;
+  /*межстрочный интервал*/
   margin-bottom: 50px;
 }
 
@@ -27,19 +29,22 @@
 
 .provide__inner-btn {
   background-color: transparent;
-  padding: 15px 64px; 
+  padding: 15px 64px;
   border: 2px solid #FF2D2D;
   border-radius: 6px;
   color: #FF2D2D;
   font-size: 18px;
-  cursor: pointer;/*при наведении появляется рука*/
-  letter-spacing: 0.3px;/*межбуквенный интервал*/
+  cursor: pointer;
+  /*при наведении появляется рука*/
+  letter-spacing: 0.3px;
+  /*межбуквенный интервал*/
 }
 
 .provide__advatages {
   display: flex;
   flex-wrap: wrap;
-  gap: 52px 4%; /*выравниваем по сетке*/
+  gap: 52px 4%;
+  /*выравниваем по сетке*/
 }
 
 .provide__advatages-item {
@@ -57,4 +62,15 @@
 
 .item__description {
   line-height: 28px;
+}
+
+/*Resp[onsive*/
+
+@media screen and (max-width: 908px) {
+
+  .provide__inner,
+  .provide__advatages {
+    width: 100%;
+    max-width: 100%;
+  }
 }

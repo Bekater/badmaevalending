@@ -2,9 +2,16 @@
   margin-bottom: 104px;
 }
 
+.feature__header {
+  width: 100%;
+  text-align: center;
+}
+
+.feature__line {
+  margin-bottom: 66px;
+}
+
 .feature__title {
-  font-size: 42px;
-  text-transform: uppercase;
   text-align: center;
   margin-bottom: 28px;
 }
@@ -13,43 +20,79 @@
   line-height: 28px;
   text-align: center;
   max-width: 536px;
-  margin: 0 auto 34px auto; /*отцентровали параграф*/
+  margin: 0 auto 34px auto;
+  /*отцентровали параграф*/
 }
 
-.feature__tabs {
-display: flex; /*расположили по горизонтали элементы*/
-justify-content: center; /*и отцентровали*/
-gap: 0 60px; /*отступ по горизонтали*/
-margin-bottom: 60px;
+.products__filter {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  margin-bottom: 60px;
 }
 
-.feature__tabs-item {
-  font-size: 22px;
+.products__link {
+  position: relative;
   text-transform: uppercase;
-  cursor: pointer;
+  left: 46px;
+  color: #000000;
+  margin-right: 56px;
+  font-size: 22px;
+  line-height: 24px;
+  text-decoration: none;
+  opacity: 0.7;
 }
 
-.feature__tabs-item:hover {
+.products__link_active {
   color: #FF2D2D;
+  opacity: 1;
 }
 
-.feature__tabs-item_active {
-  color: #FF2D2D ;
+.products__link:hover {
+  color: #FF2D2D;
 }
 
 .feature__products {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px; /*отступы*/
+  gap: 16px;
+  /*отступы*/
 }
 
 .feature__product {
   width: 24%;
   height: 300px;
-  object-fit: cover; /*новое свойство заполняет по зазмеру картинки*/
+  object-fit: cover;
+  /*новое свойство заполняет по зазмеру картинки*/
 }
 
 .feature__product:hover {
   cursor: pointer;
   height: 310px;
+}
+
+@media screen and (max-width: 1286px) {
+  .feature__products {
+    justify-content: flex-start;
+  }
+
+  .feature__product {
+    max-width: 100%;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .products__item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .service {
+    justify-content: center;
+  }
 }

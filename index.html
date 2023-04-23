@@ -12,196 +12,275 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="page">
+    <div class="page__header_grey">
+        <header class="header">
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__list-item item">
+                        <a class="item-link" href="#">home</a>
+                    </li>
+
+                    <li class="navigation__list-item item">
+                        <a class="item-link" href="#portfolio">portfolio</a>
+                    </li>
+
+                    <li class="navigation__list-item item">
+                        <a class="item-link" href="#aboutUs">about us</a>
+                    </li>
+
+                    <li class="navigation__list-item item">
+                        <a class="item-link" href="#contact">contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
     <main class="main">
-        <div class="container">
-            <header class="header">
-                <nav class="navigation">
-                    <ul class="navigation__list">
-                        <li class="navigation__list-item item">
-                            <a href="" class="item-link">home</a>
-                        </li>
-
-                        <li class="navigation__list-item item">
-                            <a href="" class="item-link">portfolio</a>
-                        </li>
-
-                        <li class="navigation__list-item item">
-                            <a href="" class="item-link">about us</a>
-                        </li>
-
-                        <li class="navigation__list-item item">
-                            <a href="" class="item-link">contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <div class="inner">
+        <div class="page__header_grey ">
+            <section class="inner container">
                 <div class="inner-left">
                     <h1 class="inner__title">
                         our strong organaisation
                     </h1>
-                    <div class="inner-description">
+                    <p class="inner-text">
                         Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor
                         incididunt ut labore et. ectetur adig ipis cing elit, sed do eiusmod tempor incididunt.
-                    </div>
+                    </p>
                     <button class="inner-button">
                         Contact Us
                     </button>
                 </div>
                 <div class="inner-right"><!-- добавили видео в ютуба, скопировали готовый код и вставили-->
-                    <iframe width="555" height="365" src="https://www.youtube.com/embed/UoQpgdtzxLE"
+                    <iframe width="550" height="356" src="https://www.youtube.com/embed/UoQpgdtzxLE"
                         title="YouTube video player" allow="accelerometer; autoplay; 
-                    clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
                 </div>
+            </section>
+        </div>
+
+        <section class="provide container">
+            <div class="provide__inner">
+                <h2 class="provide__inner-title section-heading">
+                    do you know we can provide for you ?
+                </h2>
+
+                <p class="provide__inner-description">
+                    Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore
+                    et.Lorem ni ipsum dolor sit amet, consectetur adipis cing elit, ed doi eiusmod tempor incididunt ut
+                    labore et.
+                </p>
+
+                <button class="provide__inner-btn">
+                    Learn More
+                </button>
             </div>
+
+            <div class="provide__advatages">
+                <div class="provide__advatages-item item">
+                    <img src="./images/servise-1.png" alt="" class="item__icon">
+                    <h2 class="item__title">Management</h2>
+                    <p class="item__description">
+                        Lorem ipsum dolor sitea amet, zixf conseit
+                        adipi cing elit, seddi do eiusmod btdempor in didunt utlae ore etioe.Lorem ipsum new idolor
+                    </p>
+                </div>
+
+                <div class="provide__advatages-item item">
+                    <img src="./images/service-2.png" alt="" class="item__icon">
+                    <h2 class="item__title">UI /UX Design</h2>
+                    <p class="item__description">
+                        Lorem ipsum dolor sitea amet, zixf conseit adipi cing elit, seddi do eiusmod btdempor
+                        in didunt utlae ore etioe.Lorem ipsum new idolor
+                    </p>
+                </div>
+
+                <div class="provide__advatages-item item">
+                    <img src="./images/service-3.png" alt="" class="item__icon">
+                    <h2 class="item__title">Logo / Branding</h2>
+                    <p class="item__description">
+                        Lorem ipsum dolor sitea amet, zixf conseit adipi cing elit, seddi do eiusmod btdempor
+                        in didunt utlae ore etioeew idolor sit amet,
+                    </p>
+                </div>
+
+                <div class="provide__advatages-item item">
+                    <img src="./images/service-4.png" alt="" class="item__icon">
+                    <h2 class="item__title">Animation</h2>
+                    <p class="item__description">
+                        Lorem ipsum dolor sitea amet, zixf conseit adipi cing elit, seddi do eiusmod btdempor
+                        in didunt utlae ore etioe.Lorem ipsum new idolor sit amet,
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature container">
+            <div class="feature__header">
+                <h2 class="feature__title section-heading">feature products</h2>
+
+                <p class="feature__description">
+                    Lorem ipsum dolor sit amet, consectetur adipis cing elit,sed do
+                    eiusmod tempor incididunt ut labore et.
+                </p>
+
+                <!--рисуем горизонтальную линию тэгом hr-->
+                <hr class="header__line feature__line">
+            </div>
+
+            <ul class="products__filter">
+                <li class="products__item">
+                    <a class="products__link products__link_active" href="">ALL</a>
+                </li>
+
+                <li class="products__item">
+                    <a class="products__link" href="">print template</a>
+                </li>
+
+                <li class="products__item">
+                    <a class="products__link" href="">web template</a>
+                </li>
+
+                <li class="products__item">
+                    <a class="products__link" href="">user interface</a>
+                </li>
+
+                <li class="products__item">
+                    <a class="products__link" href="">mock-up</a>
+                </li>
+            </ul>
+
+            <div class="feature__products">
+                <img class="feature__product" src="./images/golazo1.jpg" alt="скриншот макет">
+                <img class="feature__product" src="./images/golazo2.jpg" alt="скриншот макет">
+                <img class="feature__product" src="./images/golazo3.jpg" alt="скриншот макет">
+                <img class="feature__product" src="./images/golazo4.jpg" alt="скриншот макет">
+                <img class="feature__product" src="./images/golazo5.jpg" alt="скриншот макет">
+                <img class="feature__product" src="./images/golazo6.jpg" alt="скриншот макет">
+                <img class="feature__product" src="./images/golazo7.jpg" alt="скриншот макет">
+                <img class="feature__product" src="./images/golazo8.jpg" alt="скриншот макет">
+            </div>
+        </section>
+
+        <section class="team container">
+            <div class="team__header">
+                <h2 class="team__heading section-heading" id="about">
+                    Meet our team
+                </h2>
+                <p class="team__text">
+                    Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod
+                    tempor incididut labore Ui / Ux , print template.
+                </p>
+                <hr class="header__line team__line">
+            </div>
+            <div class="team__members">
+                <img class="team__selected-photo" src="./images/team1.jpg" alt="фото сотрудника">
+                <div class="team__main-content">
+                    <div class="team__selected-info">
+                        <span class="team__selected-name">олег бадмаев</span>
+                        <p class="team__selected-about">Lorem ipsum dolor sit amet, consectetur adipis
+                            cing elit, sed dooing eiusmod tempor incididut labore Ui / Ux , print template.</p>
+                        <div class="team__selected-links">
+                            <a class="team__selected-link"
+                                href="https://vk.com/fa_golazo?ysclid=lfghdir4bn725113307">VK</a>
+                            <a class="team__selected-link" href="">Instagram</a>
+                            <a class="team__selected-link" href="">WhatsApp</a>
+                            <a class="team__selected-link" href="">Telegram</a>
+                        </div>
+                    </div>
+                    <section class="members">
+                        <div class="member">
+                            <h3 class="member__name">Александр Прошин</h3>
+                            <img class="member__photo" src="./images/team2.jpg" alt="фото сотрудника">
+                        </div>
+                        <div class="member">
+                            <h3 class="member__name">Александр Прошин</h3>
+                            <img class="member__photo" src="./images/team3.jpg" alt="фото сотрудника">
+                        </div>
+                        <div class="member">
+                            <h3 class="member__name">Александр Прошин</h3>
+                            <img class="member__photo" src="./images/team4.jpg" alt="фото сотрудника">
+                        </div>
+                        <div class="member">
+                            <h3 class="member__name">Александр Прошин</h3>
+                            <img class="member__photo" src="./images/team5.jpg" alt="фото сотрудника">
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section class="container subscribe">
+            <div class="subscribe__header">
+                <h2 class="subscribe__heading section-heading">Design tips, tricks, and freebies. Delivered weekly.</h2>
+                <p class="subscribe__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</p>
+            </div>
+            <form class="subscribe__form" action="mailto:golazo24@mail.ru" enctype="text/plain" method="post">
+                <input class="subscribe__input" type="email" name="email" placeholder="Email Address..." required>
+                <button class="subscribe__button" type="submit">subscribe</button>
+            </form>
+        </section>
+
+        <div class="feedback-contacts">
+            <section class="feedback">
+                <div class="feedback__header">
+                    <h2 class="feedback__heading section-heading">get in touch</h2>
+                    <p class="feedback__text">
+                        Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et.ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et. ur adipis cing elit, sed
+                        do
+                        eiusmod tempor incididunt ut labore et.
+                    </p>
+                    <hr class="header__line feedback__line">
+                </div>
+                <div class="feedback__body section">
+                    <form class="feedback__form">
+                        <input class="feedback__input feedback__name" type="text" name="name" placeholder="Name"
+                            required>
+                        <input class="feedback__input feedback__mail" type="text" name="mail" placeholder="Mail"
+                            required>
+                        <textarea class="feedback__input feedback__message" name="message" cols="30" rows="5"
+                            placeholder="Type your message"></textarea>
+                        <button class="feedback__buttom" type="submit">Send message</button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="contacts">
+                <h2 class="contacts__heading section-heading">contact info</h2>
+                <address class="contacts__address">
+                    <p class="contacts__line">Jalalabad 24 / A, Ambaarkhana, Sylhet, Bangladesh</p>
+                    <p class="contacts__line">redwan@deviserweb.com</p>
+                    <p class="contacts__line">(+88) 017 617 46373</p>
+                </address>
+            </section>
         </div>
     </main>
 
-    <section class="provide container">
-        <div class="provide__inner">
-            <h1 class="provide__inner-title">
-                do you know we can provide for you ?
-            </h1>
-
-            <p class="provide__inner-description">
-                Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore
-                et.Lorem ni ipsum dolor sit amet, consectetur adipis cing elit, ed doi eiusmod tempor incididunt ut
-                labore et.
+    <footer class="footer">
+        <div class="footer__content section">
+            <p class="footer__copyright">
+                &copy; Copyright @Junaed 2023, All rights reserved.
             </p>
-
-            <button class="provide__inner-btn">
-                Learn More
-            </button>
-        </div>
-
-        <div class="provide__advatages">
-            <div class="provide__advatages-item item">
-                <img src="./images/servise-1.png" alt="" class="item__icon">
-                <h2 class="item__title">Management</h2>
-                <p class="item__description">
-                    Lorem ipsum dolor sitea amet, zixf conseit
-                    adipi cing elit, seddi do eiusmod btdempor in didunt utlae ore etioe.Lorem ipsum new idolor
-                </p>
-            </div>
-
-            <div class="provide__advatages-item item">
-                <img src="./images/service-2.png" alt="" class="item__icon">
-                <h2 class="item__title">UI /UX Design</h2>
-                <p class="item__description">
-                    Lorem ipsum dolor sitea amet, zixf conseit adipi cing elit, seddi do eiusmod btdempor
-                    in didunt utlae ore etioe.Lorem ipsum new idolor
-                </p>
-            </div>
-
-            <div class="provide__advatages-item item">
-                <img src="./images/service-3.png" alt="" class="item__icon">
-                <h2 class="item__title">Logo / Branding</h2>
-                <p class="item__description">
-                    Lorem ipsum dolor sitea amet, zixf conseit adipi cing elit, seddi do eiusmod btdempor
-                    in didunt utlae ore etioeew idolor sit amet,
-                </p>
-            </div>
-
-            <div class="provide__advatages-item item">
-                <img src="./images/service-4.png" alt="" class="item__icon">
-                <h2 class="item__title">Animation</h2>
-                <p class="item__description">
-                    Lorem ipsum dolor sitea amet, zixf conseit adipi cing elit, seddi do eiusmod btdempor
-                    in didunt utlae ore etioe.Lorem ipsum new idolor sit amet,
-                </p>
+            <div class="footer__social-links">
+                <a class="footer__link" href="https://instagram.com" target="_blank">
+                    <img src="./images/instagram.svg" alt="logo instagram">
+                </a>
+                <a class="footer__link" href="https://vk.com/fa_golazo" target="_blank">
+                    <img src="./images/vk.svg" alt="logo vk">
+                </a>
+                <a class="footer__link" href="https://t.me/golazo_online" target="_blank">
+                    <img src="./images/telegram.svg" alt="logo telegram">
+                </a>
+                <a class="footer__link" href="https://wa.me/79131959030" target="_blank">
+                    <img src="./images/whatsapp.svg" alt="logo whatsapp ">
+                </a>
             </div>
         </div>
-    </section>
-
-    <section class="feature container">
-        <h1 class="feature__title">feature products</h1>
-
-        <p class="feature__description">
-            Lorem ipsum dolor sit amet, consectetur adipis cing elit,sed do
-            eiusmod tempor incididunt ut labore et.
-        </p>
-
-        <div class="line line_center"></div>
-        <div class="feature__tabs">
-            <div class="feature__tabs-item feature__tabs-item_active">all</div>
-            <div class="feature__tabs-item">print template</div>
-            <div class="feature__tabs-item">web template</div>
-            <div class="feature__tabs-item">user interface</div>
-            <div class="feature__tabs-item">mock-up</div>
-        </div>
-
-        <div class="feature__products">
-            <img class="feature__product" src="./images/golazo1.jpg" alt="скриншот макет">
-            <img class="feature__product" src="./images/golazo2.jpg" alt="скриншот макет">
-            <img class="feature__product" src="./images/golazo3.jpg" alt="скриншот макет">
-            <img class="feature__product" src="./images/golazo4.jpg" alt="скриншот макет">
-            <img class="feature__product" src="./images/golazo5.jpg" alt="скриншот макет">
-            <img class="feature__product" src="./images/golazo6.jpg" alt="скриншот макет">
-            <img class="feature__product" src="./images/golazo7.jpg" alt="скриншот макет">
-            <img class="feature__product" src="./images/golazo8.jpg" alt="скриншот макет">
-        </div>
-    </section>
-
-    <section class="section team container">
-        <div class="team__header">
-            <h2 class="team__heading section__heading" id="about">
-                Meet our team
-            </h2>
-            <p class="team__text">
-                Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod
-                tempor incididut labore Ui / Ux , print template.
-            </p>
-            <hr class="header__line team__line">
-        </div>
-        <div class="team__members">
-            <img class="team__selected-photo" src="./images/team1.jpg" alt="фото сотрудника">
-            <div class="team__main-content">
-                <div class="team__selected-info">
-                    <span class="team__selected-name">олег бадмаев</span>
-                    <p class="team__selected-about">Lorem ipsum dolor sit amet, consectetur adipis
-                        cing elit, sed dooing eiusmod tempor incididut labore Ui / Ux , print template.</p>
-                    <div class="team__selected-links">
-                        <a class="team__selected-link" href="https://vk.com/fa_golazo?ysclid=lfghdir4bn725113307">VK</a>
-                        <a class="team__selected-link" href="">Instagram</a>
-                        <a class="team__selected-link" href="">WhatsApp</a>
-                        <a class="team__selected-link" href="">Telegram</a>
-                    </div>
-                </div>
-                <section class="members">
-                    <div class="member">
-                        <h3 class="member__name">Александр Прошин</h3>
-                        <img class="member__photo" src="./images/team2.jpg" alt="фото сотрудника">
-                    </div>
-                    <div class="member">
-                        <h3 class="member__name">Александр Прошин</h3>
-                        <img class="member__photo" src="./images/team3.jpg" alt="фото сотрудника">
-                    </div>
-                    <div class="member">
-                        <h3 class="member__name">Александр Прошин</h3>
-                        <img class="member__photo" src="./images/team4.jpg" alt="фото сотрудника">
-                    </div>
-                    <div class="member">
-                        <h3 class="member__name">Александр Прошин</h3>
-                        <img class="member__photo" src="./images/team5.jpg" alt="фото сотрудника">
-                    </div>
-                </section>
-            </div>
-        </div>
-    </section>
-
-    <section class="section subscribe">
-        <div class="subscribe__header">
-            <h2 class="subscribe__heading section-heading">Design tips, tricks, and freebies. Delivered weekly.</h2>
-            <p class="subscribe__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</p>
-        </div>
-        <form class="subscribe__form" action="mailto:golazo24@mail.ru" enctype="text/plain" method="post">
-            <input class="subscribe__input" type="email" name="email" placeholder="Email Address..." required>
-            <button class="subscribe__button" type="submit">subscribe</button>
-        </form>
-    </section>
-
+    </footer>
 </body>
 
 </html>
